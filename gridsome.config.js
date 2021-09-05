@@ -5,6 +5,8 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
+  siteUrl: 'https://discover.emmanuel-smith.me',
+  pathPrefix: '/',
   siteName: 'emmanuel smith',
   siteDescription: 'A simple blog to ...',
   templates: {
