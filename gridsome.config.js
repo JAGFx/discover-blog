@@ -5,10 +5,11 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
+  icon: 'static/Logo-Jagfx-2018BG.png',
   siteUrl: 'https://discover.emmanuel-smith.me',
   pathPrefix: '/',
-  siteName: 'emmanuel smith',
-  siteDescription: 'A simple blog to ...',
+  siteName: 'Emmanuel SMITH',
+  siteDescription: 'Discover the world !',
   templates: {
     Post: '/blog/:title',
   },

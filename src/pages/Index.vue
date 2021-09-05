@@ -22,7 +22,7 @@ export default {
     PostList,
   },
   metaInfo: {
-    title: "A simple blog",
+    title: "Discover the world",
   },
 };
 </script>
