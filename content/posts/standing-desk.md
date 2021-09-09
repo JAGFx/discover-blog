@@ -49,10 +49,10 @@ Je ne me suis pas arrêté là pour autant ! Mon objectif est maintenant de conn
 
 **Il n'en n'est rien.**
 
-**TiMotion** est un leader mondial dans ce domaine. En regardant leur site, on y trouve :
+[TiMotion](https://www.timotion.com/fr/) est un leader mondial dans ce domaine. En regardant leur site, on y trouve :
 
-1. Les piètements et les motorisations utilisés par la plupart des marques semblent provenir de ce fabricant (avec des légères modifications en marques blanches je dirais).
-2. Ce fabricant en question est basé en Taïwan, bien qu'il dispose d'antennes partout dans le monde, dont l'Europe.
+1. Les piètements et les motorisations utilisés par la plupart des marques semblent [provenir de ce fabricant](https://www.timotion.com/fr/products/height-adjustable-desk-kits/tek01-series) (avec des légères modifications en marques blanches je dirais).
+2. Ce fabricant en question est [basé en Taïwan](https://www.timotion.com/fr/contact/map), bien qu'il dispose d'antennes partout dans le monde, dont l'Europe.
 
 Il est clair maintenant que le **Made In France** n'est plus trop possible ... Je ne vois pas comment ce que j'ai acheté peut-être Made In France. Si on part du postulat que tout le châssis n'est pas français, reste alors le plateau non ? Possible. Mais mon investigation s'est arrêtée là. Quelque peu dégoûté de mes découvertes…
 
@@ -60,7 +60,9 @@ En plus de cela, je n'ai pas pris le plateau. Alors j'aurai donc du 100 % Taï
 
 ## Qu'en penser alors ?
 
-Pour faire simple, selon moi, toutes (ou une bonne partie) les marques de bureau assis / debout se fournissent chez ce leader du marché. Avec des ajustements, modifications ou autre. Je vous joins, en base du post, un document provenant de ce fabricant exposant toutes les combinaisons possibles entre les montants, les pieds, les moteurs ou le boîtier de commande.
+Selon le [document provenant de ce fabricant](https://www.timotion.com/_upload/files/DataSheet_TEK02-I_EN.pdf ) et mon propre avis, toutes (ou une bonne partie) des marques de bureau assis / debout se fournissent chez ce leader du marché.
+
+En faite, je dirais qu'ils ce construisent un produit personnalisé avec tout un tas d'options disponible. Parmi elles, on retrouve les montants, les pieds, les moteurs ou le boîtier de commande.
 
 Ce que j'en pense ? Les marques qui se disent **Made In France** pour moi ne le sont pas. Je dirais que peut-être seul le plateau est effectivement français, mais le châssis lui ne peut pas l'être…
 
@@ -73,8 +75,3 @@ Dernier point, j'ai pris le soin de rechercher si :
 À la première question, ce n'est malheureusement pas possible. Mais à la seconde, en dérivant sur des sites chinois ou même allemand, j'ai pu constater que le prix restait plutôt similaire pour un produit similaire.
 
 Voilà voilà 😉
-
-Sources :
-- https://www.timotion.com/fr/products/height-adjustable-desk-kits/tek01-series
-- https://www.timotion.com/fr/contact/map
-- https://www.timotion.com/_upload/files/DataSheet_TEK02-I_EN.pdf 
