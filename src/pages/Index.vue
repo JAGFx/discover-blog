@@ -21,9 +21,13 @@ export default {
   components: {
     PostList,
   },
-  metaInfo: {
-    title: "Discover the world",
-  },
+  metaInfo() {
+    return {
+      meta: [
+        { name: "author", content: "Dan Vega" }
+      ]
+    }
+  }
 };
 </script>
 
