@@ -4,10 +4,13 @@
     <p class="date" v-html="post.date" />
     <h3 class="title" v-html="post.title" />
     <p class="description" v-html="post.description" />
-    <b>{{ post.timeToRead }} min read</b> &nbsp;
-    <g-link :to="post.path" class="read"
-      >Read More
-      <span class="visuallyhidden">about {{ post.title }}</span></g-link
+    <p class="tags" v-if="post.tags.length > 0">
+      <span class="link" v-for="tag in post.tags" :key="tag">{{ tag }}</span>
+    </p>
+    <b>{{ post.timeToRead }} min environ</b> &nbsp;
+    <g-link :to="post.path" class="read">
+      Lire
+      <span class="visuallyhidden">environ {{ post.title }}</span></g-link
     >
   </div>
 </template>
@@ -16,6 +19,9 @@
 export default {
   name: 'PostList',
   props: ["post"],
+  created(){
+    console.log( this.post );
+  }
 };
 </script>
 
@@ -27,6 +33,11 @@ export default {
 
 .date {
   font-weight: 300;
+}
+
+.tags span {
+  margin: 0 .2rem;
+  font-size: .8rem;
 }
 
 .read {

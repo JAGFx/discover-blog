@@ -3,9 +3,11 @@ title: "Bureaux assis / debout, tous pareils"
 description: "Petite recherche sur l'origine des bureaux assis / debout. Le résultat n'est pas ce à quoi on s'attend !"
 date: 2021-09-05
 tags:
-  - 'a'
-  - 'b'
-  - 'c'
+  - 'bureau'
+  - 'assis'
+  - 'debut'
+  - 'français'
+  - 'pas français'
 ---
 
 Soucieux du bien-être de mon corps, j'ai décidé de faire un investissement dans un bureau assis / debout. Et tant qu'à faire, autant qu'il soit entièrement d'origine et de fabrication française. J'ai à cœur de favoriser le commerce français :D.

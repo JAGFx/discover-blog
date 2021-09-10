@@ -20,13 +20,6 @@ import PostList from "@/components/PostList";
 export default {
   components: {
     PostList,
-  },
-  metaInfo() {
-    return {
-      meta: [
-        { name: "author", content: "Dan Vega" }
-      ]
-    }
   }
 };
 </script>
@@ -43,6 +36,7 @@ query {
       node {
         id
         title
+        tags
         timeToRead
         description
         date (format: "D MMMM YYYY")

@@ -2,15 +2,6 @@
   <main class="layout" role="main">
     <Header />
     <slot />
-    <div class="footer">
-
-<!--      <p>
-        Built with
-        <a class="link" href="//gridsome.org">Gridsome</a>
-        & Made with ❤️ by
-        <a class="link" href="//twitter.com/lauragift_">Gift Egwuenu</a>
-      </p>-->
-    </div>
   </main>
 </template>
 
@@ -62,12 +53,6 @@ body {
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
-}
-
-.footer {
-  padding-top: calc(30em / 4);
-  text-align: center;
-  font-size: 1em;
 }
 
 .link {
