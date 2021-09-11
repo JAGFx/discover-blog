@@ -45,6 +45,7 @@ node {
 id
 title
 tags
+cover
 timeToRead
 description
 date (format: "D MMMM YYYY")

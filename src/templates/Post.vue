@@ -33,21 +33,23 @@
     </div>
     <script type="application/ld+json">
       {
-        "@context": "https://schema.org",
-        "@type": "BlogPosting",
-        "headline": "{{ $page.post.title }}",
-        "url": "{{ currentUrl() }}",
-        "datePublished": "{{ $page.post.date }}",
-        "inLanguage": "fr-FR",
-        "copyrightYear": "2021",
-        "keywords": "{{ $page.post.tags.join(',') }}",
-        "author": [{
-          "@type": "Person",
-          "name": "Emmanuel SMITH",
-          "url": "https://emmanuel-smith.me",
-          "email": "hey@emmanuel-smith.me"
-        }],
-        "articleBody": "{{ esp($page.post.content) }}"
+        "@context" :      "https://schema.org",
+        "@type" :         "BlogPosting",
+        "headline" :      "{{ $page.post.title }}",
+        "url" :           "{{ currentUrl() }}",
+        "datePublished" : "{{ $page.post.date }}",
+        "inLanguage" :    "fr-FR",
+        "copyrightYear" : "2021",
+        "keywords" :      "{{ $page.post.tags.join(',') }}",
+        "author" :        [
+          {
+            "@type" : "Person",
+            "name" :  "Emmanuel SMITH",
+            "url" :   "https://emmanuel-smith.me",
+            "email" : "hey@emmanuel-smith.me"
+          }
+        ],
+        "articleBody" :   "{{ esp($page.post.content) }}"
       }
     </script>
   </Layout>
@@ -59,23 +61,39 @@ export default {
   metaInfo() {
     return {
       title: this.$page.post.title,
-      meta: [
+      meta:  [
         { name: 'description', content: this.$page.post.description },
         { name: 'tags', content: this.$page.post.tags },
-        { name: "author", content: "Emmanuel SMITH <hey@emmanuel-smith.me>" }
-      ],
-    }
+        { name: 'author', content: 'Emmanuel SMITH <hey@emmanuel-smith.me>' },
+        { name: 'twitter:description', content: this.$page.post.description },
+        { name: 'twitter:title', content: this.$page.post.title },
+        { name: 'twitter:site', content: '@d_jagfx' },
+        { name: 'twitter:image', content: `https://discover.emmanuel-smith.me${ this.$page.post.cover }` },
+        { name: 'twitter:creator', content: '@d_jagfx' },
+        { property: 'og:type', content: 'article' },
+        { property: 'og:title', content: this.$page.post.title },
+        { property: 'og:description', content: this.$page.post.description },
+        {
+          property: 'og:url',
+          content:  `https://discover.emmanuel-smith.me${ this.$page.post.path }`
+        },
+        { property: 'article:published_time', content: this.$page.post.date },
+        { property: 'og:updated_time', content: this.$page.post.date },
+        { property: 'og:image', content: `https://discover.emmanuel-smith.me${ this.$page.post.cover }` },
+        { property: 'og:image:secure_url', content: `https://discover.emmanuel-smith.me${ this.$page.post.cover }` }
+      ]
+    };
   },
   methods: {
-    esp( d ){
-      return d.replace( /(<([^>]+)>)/ig, '')
-      .replace(/\t/g, '\\t')
-              .replace(/\n/g, '\\n')
-              .replace(/\f/g, '\\f')
-              .replace(/\r/g, '\\r')
-              .replace(/"/g, '\\"');
+    esp( d ) {
+      return d.replace( /(<([^>]+)>)/ig, '' )
+              .replace( /\t/g, '\\t' )
+              .replace( /\n/g, '\\n' )
+              .replace( /\f/g, '\\f' )
+              .replace( /\r/g, '\\r' )
+              .replace( /"/g, '\\"' );
     },
-    currentUrl(){
+    currentUrl() {
       return 'https://discover.emmanuel-smith.me' + this.$page.post.path;
     }
   }
@@ -84,16 +102,17 @@ export default {
 
 <page-query>
 query Post ($path: String!) {
-   post: post (path: $path) {
-    id
-    title
-    path
-    description
-    tags
-    content
-    date (format: "D MMMM YYYY")
-    timeToRead
-  }
+post: post (path: $path) {
+id
+title
+path
+cover
+description
+tags
+content
+date (format: "D MMMM YYYY")
+timeToRead
+}
 }
 </page-query>
 
@@ -103,24 +122,24 @@ query Post ($path: String!) {
 }
 
 .post-title h1 {
-  font-family: "ailerons";
+  font-family:    "ailerons";
   text-transform: lowercase;
-  font-size: 3.5rem;
-  line-height: 3rem;
-  margin: 4rem auto;
-  font-weight: 500;
+  font-size:      3.5rem;
+  line-height:    3rem;
+  margin:         4rem auto;
+  font-weight:    500;
 }
 
 .post-tags span {
-  margin: 0 .2rem;
+  margin:    0 .2rem;
   font-size: .8rem;
 }
 
 .post-date {
   font-weight: 200;
-  font-size: 1rem;
+  font-size:   1rem;
   line-height: 1rem;
-  margin: 3rem auto;
+  margin:      3rem auto;
 }
 
 .post-content {
@@ -128,8 +147,8 @@ query Post ($path: String!) {
 }
 
 .post-content blockquote {
-  margin: 0;
-  padding: 1rem 1rem 1rem 3rem;
+  margin:     0;
+  padding:    1rem 1rem 1rem 3rem;
   font-style: italic;
 }
 
@@ -138,51 +157,51 @@ query Post ($path: String!) {
 }
 
 body[data-theme="dark"] .post-content blockquote {
-  border-left: solid 3px #fff;
-  background: #ffffff11;
+  border-left: solid 3px #FFF;
+  background:  #FFFFFF11;
 }
 
 .post-content blockquote {
   border-left: solid 3px #000;
-  background: #00000011;
+  background:  #00000011;
 }
 
 .footer {
   text-align: center;
-  font-size: 1em;
-  padding: 5rem 0;
+  font-size:  1em;
+  padding:    5rem 0;
 }
 
-.footer #logo{
+.footer #logo {
   border-radius: 5rem;
-  overflow: hidden;
-  margin: .3rem;
+  overflow:      hidden;
+  margin:        .3rem;
 }
 
-.author-wrapper{
-  display: flex;
+.author-wrapper {
+  display:         flex;
   justify-content: center;
-  align-items: center;
+  align-items:     center;
 }
 
-.author-content{
-  margin: 1rem 1rem 1rem 2rem;
-  display: flex;
+.author-content {
+  margin:          1rem 1rem 1rem 2rem;
+  display:         flex;
   justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
+  align-items:     flex-start;
+  flex-direction:  column;
 }
 
 .author-content > small {
   margin-left: .3rem;
 }
 
-.author-name{
-  font-family: "ailerons";
+.author-name {
+  font-family:    "ailerons";
   text-transform: lowercase;
-  font-size: 2rem;
-  line-height: 3rem;
-  font-weight: 500;
+  font-size:      2rem;
+  line-height:    3rem;
+  font-weight:    500;
 }
 
 .author-links {
