@@ -4,7 +4,7 @@
         <title>Emmanuel SMITH</title>
         <link>https://discover.emmanuel-smith.me/</link>
         <description>Discover the world</description>
-        <lastBuildDate>Sat, 11 Sep 2021 08:49:36 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 11 Sep 2021 08:59:13 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Gridsome Feed Plugin</generator>
         <atom:link href="https://discover.emmanuel-smith.me/feed.xml" rel="self" type="application/rss+xml"/>
@@ -53,7 +53,7 @@ _(Là, c'est un peu plus limite pour du Made In France, mais ça reste encore po
 
 Je ne me suis pas arrêté là pour autant ! Mon objectif est maintenant de connaitre comment et où sont fabriqués leurs fameux bureaux (La recherche du Made In France quoi !). Je suis donc tombé sur un de leurs communiqués de presse datant de la création de leur entreprise. On y trouve notamment la mention suivante :
 
-> Les piètements motorisés <Nom de l'entreprise> intègrent la technologie TiMotion
+> Les piètements motorisés <AwesomeDesk> intègrent la technologie TiMotion
 
 À ce moment-là, la possibilité du Made In France s'éloigne un peu plus. Mais dans l'absolu, peut être que **TiMotion** est une bonne boite française, qui sait ?
 
@@ -78,11 +78,7 @@ Ce que j'en pense ? Les marques qui se disent **Made In France** pour moi ne le 
 
 Utilisez ces données pour faire votre choix. Je pense que c'est plutôt intéressant d'avoir cela en tête avant de faire un tel achat. C'est quand même pas donné !
 
-Dernier point, j'ai pris le soin de rechercher si :
-- Il était possible d'acheter directement chez **TiMotion**
-- Et donc quels étaient les prix pratiqués
-
-À la première question, ce n'est malheureusement pas possible. Mais à la seconde, en dérivant sur des sites chinois ou même allemand, j'ai pu constater que le prix restait plutôt similaire pour un produit similaire.
+Dernier point, j'ai pris le soin de rechercher si il était possible d'acheter directement chez **TiMotion** ou encore quels étaient les prix pratiqués. À la première question, ce n'est malheureusement pas possible. Mais à la seconde, en dérivant sur des sites chinois ou même allemand, j'ai pu constater que le prix restait plutôt similaire pour un produit similaire.
 
 Voilà voilà 😉]]></content:encoded>
         </item>
