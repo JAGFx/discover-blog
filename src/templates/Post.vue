@@ -11,6 +11,9 @@
         {{ $page.post.date }} | {{ $page.post.timeToRead }} min environ
       </p>
     </div>
+    <div v-if="$page.post.audio !== undefined && $page.post.audio.length > 0" class="audio-player">
+      <AudioPlayer :file="$page.post.audio" :downloadable="false" />
+    </div>
     <hr>
     <div class="post-content">
       <p v-html="$page.post.content" />
@@ -56,8 +59,11 @@
 </template>
 
 <script>
+import AudioPlayer from '../components/AudioPlayer';
+
 export default {
   name: 'Post',
+  components: {AudioPlayer},
   metaInfo() {
     return {
       title: this.$page.post.title,
@@ -102,17 +108,18 @@ export default {
 
 <page-query>
 query Post ($path: String!) {
-post: post (path: $path) {
-id
-title
-path
-cover
-description
-tags
-content
-date (format: "D MMMM YYYY")
-timeToRead
-}
+  post: post (path: $path) {
+    id
+    title
+    path
+    cover
+    description
+    tags
+    content
+    date (format: "D MMMM YYYY")
+    timeToRead
+    audio
+  }
 }
 </page-query>
 
@@ -210,6 +217,13 @@ body[data-theme="dark"] .post-content blockquote {
 
 .author-links > a {
   padding: .3rem;
+}
+
+.audio-player{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem;
 }
 
 </style>

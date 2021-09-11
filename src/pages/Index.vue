@@ -34,26 +34,26 @@ export default {
 
 <page-query>
 query {
-metadata {
-siteName
-siteDescription
-}
-allPost {
-totalCount
-edges {
-node {
-id
-title
-tags
-cover
-timeToRead
-description
-date (format: "D MMMM YYYY")
-path
-}
-}
-
-}
+  metadata {
+    siteName
+    siteDescription
+  }
+  allPost {
+    totalCount
+    edges {
+      node {
+        id
+        title
+        tags
+        cover
+        timeToRead
+        description
+        date (format: "D MMMM YYYY")
+        path
+        audio
+      }
+    }
+  }
 }
 </page-query>
 
@@ -78,7 +78,7 @@ path
 
 .header .author-links > a {
   font-size: 1.2rem;
-  padding: .3rem;
+  padding:   .3rem;
 }
 
 .header h2 {
