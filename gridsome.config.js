@@ -22,31 +22,32 @@ module.exports = {
       }
     },
     {
-      use: "gridsome-plugin-rss",
+      use: 'gridsome-plugin-feed',
       options: {
-        contentTypeName: "Post",
+        contentTypes: ['Post'],
         feedOptions: {
-          title: "Emmanuel SMITH",
-          feed_url: "https://discover.emmanuel-smith.me/rss.xml",
-          site_url: "https://discover.emmanuel-smith.me",
+          title: 'Emmanuel SMITH',
+          description: 'Discover the world'
         },
-        feedItemOptions: (node) => ({
+        rss: {
+          enabled: true,
+          output: '/feed.xml'
+        },
+        atom: {
+          enabled: false,
+          output: '/feed.atom'
+        },
+        json: {
+          enabled: false,
+          output: '/feed.json'
+        },
+        filterNodes: node => true,
+        nodeToFeedItem: node => ({
           title: node.title,
-          description: node.excerpt,
-          url: 'https://discover.emmanuel-smith.me/blog/' + node.slug,
-          author: node.author,
-          date: node.date,
-          custom_elements: [
-            {
-              published: node.date.toString(),
-            },
-          ],
-        }),
-        output: {
-          dir: "./static/",
-          name: "rss",
-        },
-      },
+          date: node.date || node.fields.date,
+          content: node.content
+        })
+      }
     },
     {
       use: '@gridsome/plugin-sitemap',

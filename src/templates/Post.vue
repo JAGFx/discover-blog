@@ -76,7 +76,7 @@ export default {
               .replace(/"/g, '\\"');
     },
     currentUrl(){
-      return window.location.href;
+      return 'https://discover.emmanuel-smith.me' + this.$page.post.path;
     }
   }
 };
@@ -87,6 +87,7 @@ query Post ($path: String!) {
    post: post (path: $path) {
     id
     title
+    path
     description
     tags
     content
