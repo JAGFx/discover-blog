@@ -20,7 +20,14 @@
         <img id="logo" src="../../static/Logo-Jagfx-2018BG.png" width="100" height="100" alt="JAGFx">
         <div class="author-content">
           <span class="author-name">Emmanuel SMITH</span>
-          <small>hey@emmanuel-smith.me</small>
+          <small>Développeur full-stack</small>
+          <span class="author-links">
+            <a href="https://twitter.com/d_jagfx" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://github.com/JAGFx" title="Github"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/smithemm/" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:hey@emmanuel-smith.me" title="M'envoyer un email"><i class="fas fa-paper-plane"></i></a>
+            <a href="https://emmanuel-smith.me" title="Site web"><i class="fas fa-globe-europe"></i></a>
+          </span>
         </div>
       </div>
     </div>
@@ -50,7 +57,6 @@
 export default {
   name: 'Post',
   metaInfo() {
-    console.log( this.$page.post, window.location.href );
     return {
       title: this.$page.post.title,
       meta: [
@@ -96,10 +102,10 @@ query Post ($path: String!) {
 }
 
 .post-title h1 {
-  font-family: "mathilde";
+  font-family: "ailerons";
   text-transform: lowercase;
-  font-size: 7rem;
-  line-height: 0.7em;
+  font-size: 3.5rem;
+  line-height: 3rem;
   margin: 4rem auto;
   font-weight: 500;
 }
@@ -155,23 +161,35 @@ body[data-theme="dark"] .post-content blockquote {
 .author-wrapper{
   display: flex;
   justify-content: center;
-  align-items: start;
+  align-items: center;
 }
 
 .author-content{
-  margin: 1rem;
+  margin: 1rem 1rem 1rem 2rem;
   display: flex;
-  justify-content: start;
-  align-items: start;
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-direction: column;
 }
 
+.author-content > small {
+  margin-left: .3rem;
+}
+
 .author-name{
-  font-family: "mathilde";
+  font-family: "ailerons";
   text-transform: lowercase;
-  font-size: 4rem;
-  line-height: 0.7em;
+  font-size: 2rem;
+  line-height: 3rem;
   font-weight: 500;
+}
+
+.author-links {
+  margin-top: 0.5rem;
+}
+
+.author-links > a {
+  padding: .3rem;
 }
 
 </style>

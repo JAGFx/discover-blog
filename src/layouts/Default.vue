@@ -15,7 +15,7 @@ export default {
 </script>
 
 <style>
-@font-face{font-family:mathilde;src:url(../../static/mathilde.otf);font-weight:400;font-style:normal}
+@font-face{font-family:ailerons;src:url(../../static/Ailerons-Regular.otf);font-weight:400;font-style:normal}
 :root {
   --text-color: #333;
   --border-color: #fecd43;

@@ -18,10 +18,7 @@
 <script>
 export default {
   name: 'PostList',
-  props: ["post"],
-  created(){
-    console.log( this.post );
-  }
+  props: ["post"]
 };
 </script>
 

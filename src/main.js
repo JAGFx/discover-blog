@@ -3,6 +3,7 @@
 
 import DefaultLayout from '~/layouts/Default.vue'
 import 'prismjs/themes/prism.css'
+import '@fortawesome/fontawesome-free/css/all.css'
 
 
 export default function (Vue, { router, head, isClient }) {
