@@ -9,7 +9,7 @@ tags:
   - 'français'
   - 'pas français' 
 cover: '/covers/cover_standing_desk.png'
-audio: ''
+audio: '/audios/standing_desk_release_mixdown.mp3'
 ---
 
 Soucieux du bien-être de mon corps, j'ai décidé de faire un investissement dans un bureau assis / debout. Et tant qu'à faire, autant qu'il soit entièrement d'origine et de fabrication française. J'ai à cœur de favoriser le commerce français :D.
